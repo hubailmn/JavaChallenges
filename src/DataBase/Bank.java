@@ -81,7 +81,7 @@ public class Bank {
                 "\n\t> Quit - to quit the program");
     }
 
-    public static void main(){
+    public static void main(String args[]){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connections = DriverManager.getConnection(url,user,password);
