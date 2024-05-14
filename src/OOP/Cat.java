@@ -1,5 +1,7 @@
 package OOP;
 
+import Main.CC;
+
 import java.util.Scanner;
 
 public class Cat {
@@ -66,21 +68,21 @@ public class Cat {
     }
 
     public void meow() {
-        System.out.printf("%s\nOOP.Cat Stats: %s\t\nmood: %s,\t\nhunger: %s, \t\nenergy: %s\n\n\n" + ConsoleColors.RESET, ConsoleColors.YELLOW_BRIGHT, ConsoleColors.GREEN_BRIGHT, mood, hungry, energy);
+        System.out.printf("%s\nOOP.Cat Stats: %s\t\nmood: %s,\t\nhunger: %s, \t\nenergy: %s\n\n\n" + CC.RESET, CC.YELLOW_BRIGHT, CC.GREEN_BRIGHT, mood, hungry, energy);
     }
 
     public void sleep() {
         mood++;
         energy++;
         hungry++;
-        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+        System.out.println(CC.CYAN + "\n\nMeow! \n" + CC.RESET);
     }
 
     public void play() {
         mood++;
         energy--;
         hungry++;
-        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+        System.out.println(CC.CYAN + "\n\nMeow! \n" + CC.RESET);
     }
 
     public void feed() {
@@ -88,37 +90,37 @@ public class Cat {
             hungry--;
         }
         mood++;
-        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+        System.out.println(CC.CYAN + "\n\nMeow! \n" + CC.RESET);
     }
 
     public void scratch() {
         mood--;
         energy++;
-        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+        System.out.println(CC.CYAN + "\n\nMeow! \n" + CC.RESET);
     }
 
     public void purr() {
         mood++;
         energy++;
-        System.out.println(ConsoleColors.CYAN + "\n\nPurr! \n" + ConsoleColors.RESET);
+        System.out.println(CC.CYAN + "\n\nPurr! \n" + CC.RESET);
     }
 
     public void hunt() {
         hungry--;
         mood++;
         energy++;
-        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+        System.out.println(CC.CYAN + "\n\nMeow! \n" + CC.RESET);
     }
 
     public void groom() {
         mood++;
         hungry--;
-        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+        System.out.println(CC.CYAN + "\n\nMeow! \n" + CC.RESET);
     }
 
     public void hiss() {
         mood--;
         energy--;
-        System.out.println(ConsoleColors.CYAN + "\n\nHiss! \n" + ConsoleColors.RESET);
+        System.out.println(CC.CYAN + "\n\nHiss! \n" + CC.RESET);
     }
 }
