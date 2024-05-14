@@ -1,13 +1,17 @@
 package OOPJune2;
-import Main.*;
-import java.util.*;
+
+import Main.CC;
+import Main.While;
+
+import java.util.Scanner;
 
 public class ArraySum {
 
     private static final Scanner scan = new Scanner(System.in);
-    public static void main(){
 
-        while(true){
+    public static void main() {
+
+        while (true) {
             System.out.printf("\n\t > %s Enter the Size of the array:%s ", CC.YELLOW_BRIGHT, CC.RESET);
             int size = While.getIntegerScanOnly(scan);
 
@@ -47,6 +51,6 @@ public class ArraySum {
             sum += number;
         }
 
-        return (double) sum ;
+        return (double) sum;
     }
 }

@@ -21,39 +21,39 @@ public class Members {
             The program will not handle the redemption process. It will only add 100 points to the multi club member’s account.
             */
 
-        private char memberType;
-        private int memberID;
-        private String name;
-        private double fees;
+    private char memberType;
+    private int memberID;
+    private String name;
+    private double fees;
 
-        public Members(char memberType, int memberID, String name, double fees) {
-            this.memberType = memberType;
-            this.memberID = memberID;
-            this.name = name;
-            this.fees = fees;
-        }
+    public Members(char memberType, int memberID, String name, double fees) {
+        this.memberType = memberType;
+        this.memberID = memberID;
+        this.name = name;
+        this.fees = fees;
+    }
 
-        public void setMemberType(char memberType) {
-            this.memberType = memberType;
-        }
+    public void setMemberType(char memberType) {
+        this.memberType = memberType;
+    }
 
-        public void setMemberID(int memberID) {
-            this.memberID = memberID;
-        }
-
-
-        public void setName(String name) {
-            this.name = name;
-        }
+    public void setMemberID(int memberID) {
+        this.memberID = memberID;
+    }
 
 
-        public void setFees(double fees) {
-            this.fees = fees;
-        }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        public String toString() {
-            return memberType + " " + memberID + " " + name + " " + fees;
-        }
+
+    public void setFees(double fees) {
+        this.fees = fees;
+    }
+
+    public String toString() {
+        return memberType + " " + memberID + " " + name + " " + fees;
+    }
 
 
 }

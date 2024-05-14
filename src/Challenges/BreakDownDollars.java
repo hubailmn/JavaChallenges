@@ -1,15 +1,16 @@
 package Challenges;
 
+import Main.While;
+
 import java.util.Scanner;
-import Main.*;
 
 public class BreakDownDollars {
 
-    public static void main(){
+    public static void main() {
 
         Scanner scan = new Scanner(System.in);
 
-        while(true) {
+        while (true) {
 
             System.out.print("\nEnter amount in dollars: ");
             int amount = scan.nextInt();
@@ -22,7 +23,7 @@ public class BreakDownDollars {
             amount = amount % 5;
             int ones = amount;
 
-            System.out.printf("\n Twenties: %d \n Tens: %d \n Fives: %d \n Ones: %d\n",twenties,tens,fives,ones);
+            System.out.printf("\n Twenties: %d \n Tens: %d \n Fives: %d \n Ones: %d\n", twenties, tens, fives, ones);
 
             While.again();
 

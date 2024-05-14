@@ -1,20 +1,21 @@
 package ErrorHandling;
 
+import Main.While;
+
 import java.util.Scanner;
-import Main.*;
 
 public class TryCatch {
 
     private static Scanner scan = new Scanner(System.in);
 
-    public static void ErrorHandle1(){
+    public static void ErrorHandle1() {
 
-        try{
+        try {
             System.out.print("\nEnter an Integer: ");
             int value = scan.nextInt();
             System.out.println("this is an integer");
 
-        }catch ( Exception e){
+        } catch (Exception e) {
             System.out.println(e);
         }
 

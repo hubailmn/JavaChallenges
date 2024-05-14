@@ -1,14 +1,15 @@
 package Challenges;
 
+import Main.While;
+
 import java.util.Scanner;
-import Main.*;
 
 public class DNA {
 
-    public static void main(){
+    public static void main() {
         Scanner DNASCanner = new Scanner(System.in);
 
-        while(true){
+        while (true) {
             System.out.print(" \n>Challenges.DNA: ");
             String DNA = DNASCanner.next();
 
@@ -18,9 +19,9 @@ public class DNA {
             int sequenceDifference = ATG - TGA;
 
             if (DNA.contains("ATG") && DNA.contains("TGA") && (sequenceDifference % 3) == 0) {
-                System.out.println("\""+DNA +"\" Does contain protein!");
+                System.out.println("\"" + DNA + "\" Does contain protein!");
             } else {
-                System.out.println("\""+DNA +"\" Does not contain protein!");
+                System.out.println("\"" + DNA + "\" Does not contain protein!");
             }
 
             While.again();

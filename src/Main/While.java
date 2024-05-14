@@ -1,6 +1,7 @@
 package Main;
 
-import java.util.*;
+import java.util.Random;
+import java.util.Scanner;
 
 public class While {
 
@@ -29,7 +30,7 @@ public class While {
     public static String getStringScanOnly(Scanner scan) {
         String input = scan.next();
         while (!input.matches("^[a-zA-Z]+$")) {
-            System.out.print(CC.RED_BOLD_BRIGHT + "\t⛔️ Invalid Input, Please enter a String Value: "+ CC.RESET);
+            System.out.print(CC.RED_BOLD_BRIGHT + "\t⛔️ Invalid Input, Please enter a String Value: " + CC.RESET);
             input = scan.next();
         }
         return input;
@@ -37,7 +38,7 @@ public class While {
 
     public static int getIntegerScanOnly(Scanner scan) {
         while (!scan.hasNextInt()) {
-            System.out.print(CC.RED_BOLD_BRIGHT + "\t⛔️ Invalid Input, Please enter an Integer Value: "+ CC.RESET);
+            System.out.print(CC.RED_BOLD_BRIGHT + "\t⛔️ Invalid Input, Please enter an Integer Value: " + CC.RESET);
             scan.next();
         }
         return scan.nextInt();
@@ -52,9 +53,9 @@ public class While {
     }
 
 
-    public static double getDoubleScanOnly(Scanner scan){
+    public static double getDoubleScanOnly(Scanner scan) {
         while (!scan.hasNextDouble()) {
-            System.out.print(CC.RED_BOLD_BRIGHT + "\t⛔️ Invalid Input, Please enter a Integer or Double value: "+ CC.RESET);
+            System.out.print(CC.RED_BOLD_BRIGHT + "\t⛔️ Invalid Input, Please enter a Integer or Double value: " + CC.RESET);
             scan.next();
         }
         return scan.nextDouble();
@@ -63,7 +64,7 @@ public class While {
     public static String getSentenceStringScanOnly(Scanner scan) {
         String input = scan.nextLine();
         while (!input.matches("^[a-zA-Z\\s]+$")) {
-            System.out.print(CC.RED_BOLD_BRIGHT + "\t⛔️ Invalid Input, Please enter a String Value: "+ CC.RESET);
+            System.out.print(CC.RED_BOLD_BRIGHT + "\t⛔️ Invalid Input, Please enter a String Value: " + CC.RESET);
             input = scan.nextLine();
 
         }

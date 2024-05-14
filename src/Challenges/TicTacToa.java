@@ -1,9 +1,13 @@
 package Challenges;
 
+import Main.CC;
+
 import java.util.Scanner;
-import Main.*;
 
 public class TicTacToa {
+
+    private static final char[][] board = new char[3][3];
+    private static char currentPlayer = 'X';
 
     public static void main() {
 
@@ -16,20 +20,16 @@ public class TicTacToa {
             displayBoard();
 
             if (hasWon()) {
-                System.out.println(CC.GREEN_BOLD_BRIGHT+"\nPlayer " + currentPlayer + " has won the game!");
+                System.out.println(CC.GREEN_BOLD_BRIGHT + "\nPlayer " + currentPlayer + " has won the game!");
                 return;
             }
 
             switchPlayer();
         }
-        System.out.println(CC.YELLOW_BRIGHT+"\nGame over. It's a tie!");
-
+        System.out.println(CC.YELLOW_BRIGHT + "\nGame over. It's a tie!");
 
 
     } // void main
-
-    private static final char[][] board = new char[3][3];
-    private static char currentPlayer = 'X';
 
     private static void initializeBoard() {
         for (int row = 0; row < 3; row++) {
@@ -53,12 +53,12 @@ public class TicTacToa {
 
     private static void playTurn() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print(CC.BLUE+"\nPlayer " + currentPlayer + ", enter row (1-3): "+ CC.RESET);
+        System.out.print(CC.BLUE + "\nPlayer " + currentPlayer + ", enter row (1-3): " + CC.RESET);
         int row = scanner.nextInt() - 1;
-        System.out.print(CC.BLUE+"Player " + currentPlayer + ", enter column (1-3): "+ CC.RESET);
+        System.out.print(CC.BLUE + "Player " + currentPlayer + ", enter column (1-3): " + CC.RESET);
         int col = scanner.nextInt() - 1;
         if (board[row][col] != '-') {
-            System.out.println(CC.RED_BOLD_BRIGHT+"\nThat space is already taken. Try again."+ CC.RESET);
+            System.out.println(CC.RED_BOLD_BRIGHT + "\nThat space is already taken. Try again." + CC.RESET);
             playTurn();
         } else {
             board[row][col] = currentPlayer;

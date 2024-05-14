@@ -1,35 +1,39 @@
 package OOPJune2;
-import Main.*;
-import java.util.*;
+
+import Main.CC;
+import Main.While;
+
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
 
 
-        System.out.printf(CC.BLUE_BOLD_BRIGHT+"""
-                        
-                        
-                        ---------------------------------
-                             June 2nd - OOP WorkSheet
-                        ---------------------------------
-                        %s
-                            Main menu:
-                                1. Array Search
-                                2. Array Sum
-                                3. Calculate Average
-                                4. Character Check
-                                5. Count vowels ans consonants
-                                6. Fibonacci Series
-                                7. Leap Year
-                                8. Prime Number Checker
-                                9. Rectangle
-                               10. Reverse String
-                               11. Word Count
-                               12. Help
-                               13. Quit
-                           """, CC.RESET);
+        System.out.printf(CC.BLUE_BOLD_BRIGHT + """
+                                        
+                                        
+                ---------------------------------
+                     June 2nd - OOP WorkSheet
+                ---------------------------------
+                %s
+                    Main menu:
+                        1. Array Search
+                        2. Array Sum
+                        3. Calculate Average
+                        4. Character Check
+                        5. Count vowels ans consonants
+                        6. Fibonacci Series
+                        7. Leap Year
+                        8. Prime Number Checker
+                        9. Rectangle
+                       10. Reverse String
+                       11. Word Count
+                       12. Help
+                       13. Quit
+                   """, CC.RESET);
 
 
         while (true) {
@@ -58,8 +62,8 @@ public class Main {
         }
     }
 
-    private static void help(){
-        System.out.printf(CC.BLUE_BOLD_BRIGHT+"""
+    private static void help() {
+        System.out.printf(CC.BLUE_BOLD_BRIGHT + """
 
 
                 ---------------------------------
@@ -80,6 +84,6 @@ public class Main {
                        11. Word Count - To counts the number of words in the sentence.
                        12. Help - To show this menu.
                        13. Quit - To Exit the program.
-                   """,CC.RESET);
+                   """, CC.RESET);
     }
 }

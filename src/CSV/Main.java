@@ -1,13 +1,16 @@
 package CSV;
 
-import Main.*;
-import java.util.*;
-import java.io.*;
+import Main.CC;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.Scanner;
+
 public class Main {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         try {
 
@@ -16,20 +19,20 @@ public class Main {
 
             System.out.println("|Name                    |Last Name               |Grade                   |Role");
 
-            while(br.ready()){
+            while (br.ready()) {
                 String[] line = br.readLine().split(",");
-                for(String index: line){
-                    System.out.printf("%-25s",index);
+                for (String index : line) {
+                    System.out.printf("%-25s", index);
                 }
                 System.out.println();
 
             }
             br.close();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
-            System.out.println(CC.BLUE+"\nThanks! ");
+        } finally {
+            System.out.println(CC.BLUE + "\nThanks! ");
         }
 
     }

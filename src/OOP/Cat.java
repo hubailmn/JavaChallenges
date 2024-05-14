@@ -4,66 +4,9 @@ import java.util.Scanner;
 
 public class Cat {
 
-     private int mood= 5, hungry = 5, energy = 5;
+    private int mood = 5, hungry = 5, energy = 5;
 
-    public void meow(){
-        System.out.printf("%s\nOOP.Cat Stats: %s\t\nmood: %s,\t\nhunger: %s, \t\nenergy: %s\n\n\n"+ ConsoleColors.RESET, ConsoleColors.YELLOW_BRIGHT, ConsoleColors.GREEN_BRIGHT, mood, hungry, energy);
-    }
-
-    public void sleep(){
-        mood++;
-        energy ++;
-        hungry ++;
-        System.out.println(ConsoleColors.CYAN+"\n\nMeow! \n"+ ConsoleColors.RESET);
-    }
-
-    public void play(){
-        mood ++;
-        energy--;
-        hungry ++;
-        System.out.println(ConsoleColors.CYAN+"\n\nMeow! \n"+ ConsoleColors.RESET);
-    }
-
-    public void feed(){
-       if(hungry > 0 ){
-           hungry--;
-       }
-        mood++;
-        System.out.println(ConsoleColors.CYAN+"\n\nMeow! \n"+ ConsoleColors.RESET);
-    }
-
-    public void scratch() {
-        mood--;
-        energy++;
-        System.out.println(ConsoleColors.CYAN+"\n\nMeow! \n"+ ConsoleColors.RESET);
-    }
-
-    public void purr() {
-        mood++;
-        energy++;
-        System.out.println(ConsoleColors.CYAN+"\n\nPurr! \n"+ ConsoleColors.RESET);
-    }
-
-    public void hunt() {
-        hungry--;
-        mood++;
-        energy++;
-        System.out.println(ConsoleColors.CYAN+"\n\nMeow! \n"+ ConsoleColors.RESET);
-    }
-
-    public void groom() {
-        mood++;
-        hungry--;
-        System.out.println(ConsoleColors.CYAN+"\n\nMeow! \n"+ ConsoleColors.RESET);
-    }
-
-    public void hiss() {
-        mood--;
-        energy--;
-        System.out.println(ConsoleColors.CYAN+"\n\nHiss! \n"+ ConsoleColors.RESET);
-    }
-
-    public static void catGame(){
+    public static void catGame() {
         Scanner scanner = new Scanner(System.in);
         Cat cat = new Cat();
         boolean quit = false;
@@ -120,5 +63,62 @@ public class Cat {
                     break;
             }
         }
+    }
+
+    public void meow() {
+        System.out.printf("%s\nOOP.Cat Stats: %s\t\nmood: %s,\t\nhunger: %s, \t\nenergy: %s\n\n\n" + ConsoleColors.RESET, ConsoleColors.YELLOW_BRIGHT, ConsoleColors.GREEN_BRIGHT, mood, hungry, energy);
+    }
+
+    public void sleep() {
+        mood++;
+        energy++;
+        hungry++;
+        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+    }
+
+    public void play() {
+        mood++;
+        energy--;
+        hungry++;
+        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+    }
+
+    public void feed() {
+        if (hungry > 0) {
+            hungry--;
+        }
+        mood++;
+        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+    }
+
+    public void scratch() {
+        mood--;
+        energy++;
+        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+    }
+
+    public void purr() {
+        mood++;
+        energy++;
+        System.out.println(ConsoleColors.CYAN + "\n\nPurr! \n" + ConsoleColors.RESET);
+    }
+
+    public void hunt() {
+        hungry--;
+        mood++;
+        energy++;
+        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+    }
+
+    public void groom() {
+        mood++;
+        hungry--;
+        System.out.println(ConsoleColors.CYAN + "\n\nMeow! \n" + ConsoleColors.RESET);
+    }
+
+    public void hiss() {
+        mood--;
+        energy--;
+        System.out.println(ConsoleColors.CYAN + "\n\nHiss! \n" + ConsoleColors.RESET);
     }
 }

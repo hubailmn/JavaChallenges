@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ThePrime {
 
-    public static void thePrime(){
+    public static void thePrime() {
 
         int[] numbers = {2, 3, 4, 5, 6, 7, 8, 9, 10};
         ArrayList<Integer> primes = new ArrayList<>();

@@ -1,6 +1,9 @@
 package OOPJune2;
-import Main.*;
-import java.util.*;
+
+import Main.CC;
+import Main.While;
+
+import java.util.Scanner;
 
 public class CountVowelsAndConsonants {
 
@@ -8,10 +11,10 @@ public class CountVowelsAndConsonants {
     private static int vowels;
     private static int consonants;
 
-    public static void main(){
+    public static void main() {
 
-        while(true){
-            System.out.printf("\n\t > %sEnter a string: %s",CC.YELLOW_BRIGHT, CC.RESET);
+        while (true) {
+            System.out.printf("\n\t > %sEnter a string: %s", CC.YELLOW_BRIGHT, CC.RESET);
             String input = While.getSentenceStringScanOnly(scan);
 
             for (int i = 0; i < input.length(); i++) {

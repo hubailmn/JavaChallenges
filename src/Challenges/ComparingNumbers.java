@@ -1,13 +1,14 @@
 package Challenges;
 
+import Main.While;
+
 import java.util.Scanner;
-import Main.*;
 
 public class ComparingNumbers {
 
-    public static void main(){
+    public static void main() {
         Scanner sc = new Scanner(System.in);
-        while(true) {
+        while (true) {
             int num1, num2, num3;
             System.out.print("Enter the first number: ");
             num1 = sc.nextInt();

@@ -1,6 +1,5 @@
 package Project1;
 
-import java.io.*;
 public class Account {
     private int accountNumber;
     private double balance;

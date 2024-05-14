@@ -1,12 +1,13 @@
 package Challenges;
 
+import Main.While;
+
 import java.util.Random;
 import java.util.Scanner;
-import Main.*;
 
 public class Magic8Ball {
 
-    public static void magic8ball(){
+    public static void magic8ball() {
         System.out.println("\n        ----{ Magic8ball }----        ");
         Scanner playScanner = new Scanner(System.in);
 
@@ -17,7 +18,7 @@ public class Magic8Ball {
             System.out.println("\nType Your Question Here... ");
             playScanner.nextLine();
 
-            if (x==0) {
+            if (x == 0) {
                 System.out.println("Challenges.Magic8Ball ->  It is certain");
             } else if (x == 1) {
                 System.out.println("Challenges.Magic8Ball -> It is decidedly so");
@@ -43,23 +44,23 @@ public class Magic8Ball {
                 System.out.println("Challenges.Magic8Ball -> Ask again later");
             } else if (x == 12) {
                 System.out.println("Challenges.Magic8Ball -> Better not tell you now");
-            }  else if (x == 13) {
+            } else if (x == 13) {
                 System.out.println("Challenges.Magic8Ball -> Cannot predict now");
-            }  else if (x == 14) {
+            } else if (x == 14) {
                 System.out.println("Challenges.Magic8Ball -> Concentrate and ask again");
-            }  else if (x == 15) {
+            } else if (x == 15) {
                 System.out.println("Challenges.Magic8Ball -> Don’t count on it");
-            }  else if (x == 16) {
+            } else if (x == 16) {
                 System.out.println("Challenges.Magic8Ball -> My reply is no");
-            }  else if (x == 17) {
+            } else if (x == 17) {
                 System.out.println("Challenges.Magic8Ball -> My sources say no");
-            }  else if (x == 18) {
+            } else if (x == 18) {
                 System.out.println("Challenges.Magic8Ball -> Outlook not so good");
-            }  else {
+            } else {
                 System.out.println("Challenges.Magic8Ball -> Very doubtful");
             }
 
-            while(true){
+            while (true) {
 
                 System.out.println();
                 System.out.println("Challenges.Magic8Ball -> Do You Want To Ask Another question? <yes / no>");
@@ -71,7 +72,7 @@ public class Magic8Ball {
                     System.out.println("Challenges.Magic8Ball -> OK! Thank You For Playing!");
                     return;
                 } else {
-                    System.out.println("Challenges.Magic8Ball -> Error, i don't understand, '"+option+"'");
+                    System.out.println("Challenges.Magic8Ball -> Error, i don't understand, '" + option + "'");
                 }
             }
         }
@@ -127,19 +128,19 @@ public class Magic8Ball {
         }
     }
 
-    public static void magic8BallV3(){
+    public static void magic8BallV3() {
 
         System.out.println("\n        ----{ Magic8ball }----        ");
         Scanner playScanner = new Scanner(System.in);
         Random ran = new Random();
 
-        while (true){
+        while (true) {
             int x = ran.nextInt(20);
             System.out.println("\nType Your Question Here... ");
             playScanner.nextLine();
 
 
-            switch (x){
+            switch (x) {
                 case 0:
                     System.out.println("Challenges.Magic8Ball ->  It is certain");
                     break;

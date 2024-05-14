@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class StoryGenerator {
 
-    public static void storyGen(){
+    public static void storyGen() {
         Scanner storyScanner = new Scanner(System.in);
 
         System.out.print("noun: ");
@@ -21,7 +21,7 @@ public class StoryGenerator {
 
     }
 
-    public static void storyGenV2(){
+    public static void storyGenV2() {
         Scanner sotryScanner = new Scanner(System.in);
         System.out.print("Enter a noun: ");
         String noun = sotryScanner.nextLine();

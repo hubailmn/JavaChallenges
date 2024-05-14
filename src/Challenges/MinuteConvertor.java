@@ -1,17 +1,18 @@
 package Challenges;
 
+import Main.While;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
-import Main.*;
 
 public class MinuteConvertor {
 
-    public static void main(){
+    public static void main() {
 
         DecimalFormat df = new DecimalFormat("#.###");
         Scanner conScanner = new Scanner(System.in);
 
-        while(true) {
+        while (true) {
             System.out.print("Enter Number of Min.. ");
             Double numMin = conScanner.nextDouble();
 

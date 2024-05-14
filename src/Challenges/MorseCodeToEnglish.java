@@ -1,26 +1,27 @@
 package Challenges;
 
+import Main.CC;
+
 import java.util.Scanner;
-import Main.*;
 
 public class MorseCodeToEnglish {
 
     public static void main() {
 
-        char[] letter = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
-        String[] code = { ".-", "-...", "-.-.", "-..",  ".", "..-.", "--.", "....", "..", ".---", "-.-",  ".-..", "--", "-.", "---", ".--.", "--.-", ".-.",  "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", "|" };
+        char[] letter = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
+        String[] code = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", "|"};
 
         Scanner scan = new Scanner(System.in);
 
-        while (true){
+        while (true) {
 
             System.out.print("""
-                    
+                                        
                     \nMain Menu:
                     \t1. Convert Morse Code to English Text.
                     \t2. Convert English Text to Morse Code.
                     \t3. Exit
-                    
+                                        
                     Enter Your Option: \s"""
             );
 
@@ -41,19 +42,18 @@ public class MorseCodeToEnglish {
                     System.out.println(CC.RED_BOLD_BRIGHT + "\nQuitting!");
                     return;
                 }
-                default ->
-                        System.out.println(CC.RED_BRIGHT + "\nError - \"" + option + "\" Not Found!" + CC.RESET);
+                default -> System.out.println(CC.RED_BRIGHT + "\nError - \"" + option + "\" Not Found!" + CC.RESET);
             }
         }
     }
 
     public static void morseToEnglish(String[] code, String morseCode) {
         String[] array = morseCode.split("\\s+|/");
-        System.out.print(CC.RESET+"\nMorse code " + morseCode + " to English is ");
+        System.out.print(CC.RESET + "\nMorse code " + morseCode + " to English is ");
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < code.length; j++) {
                 if (array[i].compareTo(code[j]) == 0) {
-                    System.out.print((char)(j + 'a') + "");
+                    System.out.print((char) (j + 'a') + "");
                     break;
                 }
             }
@@ -65,7 +65,7 @@ public class MorseCodeToEnglish {
 
 
     public static void englishToMorse(String[] code, String englishLang, char[] letter) {
-        System.out.print(CC.RESET+"Morse code of " + englishLang + " is ");
+        System.out.print(CC.RESET + "Morse code of " + englishLang + " is ");
         for (int i = 0; i < englishLang.length(); i++) {
             if (englishLang.charAt(i) == ' ') {
                 System.out.print(" / ");
@@ -80,10 +80,10 @@ public class MorseCodeToEnglish {
         }
     }
 
-    public static String get(Scanner scan){
+    public static String get(Scanner scan) {
         String input = scan.nextLine();
         while (!input.matches("^[a-zA-Z]+$")) {
-            System.out.println(CC.RED_BOLD_BRIGHT+"\ninvalid - input should only contain alphabetical characters.");
+            System.out.println(CC.RED_BOLD_BRIGHT + "\ninvalid - input should only contain alphabetical characters.");
             input = scan.nextLine();
         }
         return input;

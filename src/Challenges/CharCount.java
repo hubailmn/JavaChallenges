@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CharCount {
 
-    public static void main(){
+    public static void main() {
 
         Scanner anotherScanner = new Scanner(System.in);
         boolean continueLoop = true;
@@ -12,7 +12,7 @@ public class CharCount {
             System.out.print("\n > Enter a string: ");
             String inputString = anotherScanner.nextLine();
             if (!inputString.isEmpty()) {
-                System.out.println("\n >  Your string is:  "+ inputString +", The number of characters in the string is: " + inputString.length());
+                System.out.println("\n >  Your string is:  " + inputString + ", The number of characters in the string is: " + inputString.length());
                 System.out.print("\n > Do you want to enter another string? (yes/no): ");
                 String userInput = anotherScanner.nextLine();
                 if (userInput.equalsIgnoreCase("no")) {

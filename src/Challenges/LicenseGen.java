@@ -4,17 +4,16 @@ import java.util.Random;
 
 public class LicenseGen {
 
+    private static Random rand = new Random();
+    private static char[] letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+    private static int passwordLength = 20;
+    private static int numCount = 5;
+
     public static void main(String[] args) {
         for (int i = 0; i < 20; i++) {
             System.out.println("license #" + i + ": " + generateLicense());
         }
     }
-
-
-    private static Random rand = new Random();
-    private static char[] letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-    private static int passwordLength = 20;
-    private static int numCount = 5;
 
     public static String generateLicense() {
         StringBuilder rawPassword = new StringBuilder();

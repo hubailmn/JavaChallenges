@@ -1,18 +1,19 @@
 package Challenges;
 
+import Main.While;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
-import Main.*;
 
 public class AreaOfRectangularRoom {
 
-    public static void main(){
+    public static void main() {
 
         DecimalFormat df = new DecimalFormat("#.###");
         Scanner areaScanner = new Scanner(System.in);
         System.out.println("\n   ---> The Area of the Rectangular <---    ");
 
-        while(true) {
+        while (true) {
             System.out.print("\n > What is the length of the room in feet? ");
             double areaLength = areaScanner.nextDouble();
             System.out.print("\n > What is the width of the room in feet? ");
@@ -32,7 +33,7 @@ public class AreaOfRectangularRoom {
         }
     }
 
-    public static void areaRectangularRoomV2(){
+    public static void areaRectangularRoomV2() {
         double length, width, areaInFeet, areaInMeters;
         final double feetSqToMeterSq = 0.09290304;
         Scanner input = new Scanner(System.in);
@@ -43,15 +44,13 @@ public class AreaOfRectangularRoom {
         System.out.print("Enter the unit of measurement (ft or m): ");
         unit = input.next();
 
-        if(unit.equals("ft")) {
+        if (unit.equals("ft")) {
             areaInFeet = length;
             areaInMeters = areaInFeet * feetSqToMeterSq;
-        }
-        else if(unit.equals("m")) {
+        } else if (unit.equals("m")) {
             areaInMeters = length;
             areaInFeet = areaInMeters / feetSqToMeterSq;
-        }
-        else {
+        } else {
             System.out.println("Invalid unit of measurement entered.");
             return;
         }
@@ -61,15 +60,13 @@ public class AreaOfRectangularRoom {
         System.out.print("Enter the unit of measurement (ft or m): ");
         unit = input.next();
 
-        if(unit.equals("ft")) {
+        if (unit.equals("ft")) {
             areaInFeet = areaInFeet * width;
             areaInMeters = areaInFeet * feetSqToMeterSq;
-        }
-        else if(unit.equals("m")) {
+        } else if (unit.equals("m")) {
             areaInMeters = areaInMeters * width;
             areaInFeet = areaInMeters / feetSqToMeterSq;
-        }
-        else {
+        } else {
             System.out.println("Invalid unit of measurement entered.");
             return;
         }

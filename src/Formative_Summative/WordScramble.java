@@ -1,11 +1,13 @@
 package Formative_Summative;
 
-import java.util.*;
+import java.util.Random;
+import java.util.Scanner;
+
 public class WordScramble {
 
     private static int score;
 
-    public static void main(){
+    public static void main() {
 
         Scanner scan = new Scanner(System.in);
 
@@ -38,7 +40,7 @@ public class WordScramble {
                     String scrambledWord = new String(originalWord);
 
                     System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-                    
+
                     System.out.println("\nThe scrambled word is: " + scrambledWord);
                     System.out.println("""
 
@@ -94,7 +96,7 @@ public class WordScramble {
         return letters[rand.nextInt(letters.length)];
     }
 
-    private static String getAlphabet(Scanner scan){
+    private static String getAlphabet(Scanner scan) {
         String input = scan.nextLine();
         while (!input.matches("^[a-zA-Z]+$")) {
             System.out.println("\ninvalid - input should only contain alphabetical characters.");
@@ -103,11 +105,11 @@ public class WordScramble {
         return input;
     }
 
-     private static void guessUpto3(String Word){
+    private static void guessUpto3(String Word) {
         Scanner scan = new Scanner(System.in);
 
         for (int i = 0; i < 3; i++) {
-            System.out.print("Enter your guess #" + (i+1) +": ");
+            System.out.print("Enter your guess #" + (i + 1) + ": ");
             String guess = getAlphabet(scan);
 
             if (guess.equals(Word)) {

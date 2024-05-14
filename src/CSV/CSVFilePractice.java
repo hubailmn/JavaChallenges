@@ -1,21 +1,24 @@
 package CSV;
 
-import java.io.*;
+import Main.While;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.Scanner;
 
-import Main.*;
 public class CSVFilePractice {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    public static void main(){
+    public static void main() {
 
 
-        try{
+        try {
             FileReader fr = new FileReader("src/CSV/ComputerScience.csv");
             BufferedReader br = new BufferedReader(fr);
 
-            while(br.ready()){
+            while (br.ready()) {
 
                 String[] data = br.readLine().split(",");
 
@@ -23,7 +26,7 @@ public class CSVFilePractice {
                         Name: %s
                         Grade: %s
                         Role: %s
-                        
+                                                
                         """, data[0], data[2], data[3]);
             }
             br.close();
@@ -40,16 +43,16 @@ public class CSVFilePractice {
             System.out.print("Enter your role: ");
             String role = While.getStringScanOnly(scan);
 
-            csvWriter.write(String.format("\"%s\",\"%s\",%s,\"%s\"",name, lastName, grade, role));
+            csvWriter.write(String.format("\"%s\",\"%s\",%s,\"%s\"", name, lastName, grade, role));
             csvWriter.close();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
 
-    public static void main2(){
+    public static void main2() {
 
         try {
 
@@ -58,17 +61,17 @@ public class CSVFilePractice {
 
             System.out.println("|Name         |Last Name   |Grade       |Role");
 
-            while(br.ready()){
+            while (br.ready()) {
                 String[] line = br.readLine().split(",");
-                for(String index: line){
-                    System.out.printf("%-13s",index);
+                for (String index : line) {
+                    System.out.printf("%-13s", index);
                 }
                 System.out.println();
 
             }
             br.close();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

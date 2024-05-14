@@ -1,14 +1,15 @@
 package Challenges;
 
+import Main.While;
+
 import java.util.Scanner;
-import Main.*;
 
 public class BirthMonth {
 
-    public static void main(){
+    public static void main() {
         Scanner birthMon = new Scanner(System.in);
 
-        while(true){
+        while (true) {
             System.out.print("\nEnter your Birth Month. >  ");
             int birthMonth = birthMon.nextInt();
 

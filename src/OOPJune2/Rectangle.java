@@ -1,6 +1,9 @@
 package OOPJune2;
-import Main.*;
-import java.util.*;
+
+import Main.CC;
+import Main.While;
+
+import java.util.Scanner;
 
 public class Rectangle {
 
@@ -8,9 +11,41 @@ public class Rectangle {
     private double length;
     private double width;
 
-    public Rectangle(double length, double width){
+    public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
+    }
+
+    public static void main() {
+
+        while (true) {
+            System.out.printf("\n\t > %sEnter the length: %s ", CC.YELLOW_BRIGHT, CC.RESET);
+            double length = While.getDoubleScanOnly(scan);
+
+            System.out.printf("\t > %sEnter the width: %s ", CC.YELLOW_BRIGHT, CC.RESET);
+            double width = While.getDoubleScanOnly(scan);
+
+
+            Rectangle rectangle = new Rectangle(length, width);
+            double area = rectangle.calculateArea();
+            double perimeter = rectangle.calculatePerimeter();
+
+            System.out.printf(" \n\t > Area: %s%s%s ", CC.GREEN_BRIGHT, area, CC.RESET);
+            System.out.printf(" \n\t > Perimeter: %s%s%S", CC.GREEN_BRIGHT, perimeter, CC.RESET);
+
+            while (true) {
+                System.out.print(CC.WHITE_BOLD_BRIGHT + "\n\n ⚪️ Try Again? < Yes / No > ");
+                String Option = scan.next().toLowerCase().trim().strip();
+                if (Option.equals("yes")) {
+                    break;
+                } else if (Option.equals("no")) {
+                    return;
+                } else {
+                    System.out.println(CC.RED_BOLD_BRIGHT + " ⛔️ Error - \"" + Option + "\" Not Fount! ");
+                }
+            }
+        }
+
     }
 
     public double getLength() {
@@ -36,39 +71,6 @@ public class Rectangle {
     public double calculatePerimeter() {
         return 2 * (length + width);
     }
-
-    public static void main(){
-
-       while (true){
-           System.out.printf("\n\t > %sEnter the length: %s ",CC.YELLOW_BRIGHT, CC.RESET);
-           double length = While.getDoubleScanOnly(scan);
-
-           System.out.printf("\t > %sEnter the width: %s ", CC.YELLOW_BRIGHT, CC.RESET);
-           double width = While.getDoubleScanOnly(scan);
-
-
-           Rectangle rectangle = new Rectangle(length, width);
-           double area = rectangle.calculateArea();
-           double perimeter = rectangle.calculatePerimeter();
-
-           System.out.printf(" \n\t > Area: %s%s%s ", CC.GREEN_BRIGHT, area, CC.RESET);
-           System.out.printf(" \n\t > Perimeter: %s%s%S",CC.GREEN_BRIGHT, perimeter, CC.RESET);
-
-           while (true) {
-               System.out.print(CC.WHITE_BOLD_BRIGHT + "\n\n ⚪️ Try Again? < Yes / No > ");
-               String Option = scan.next().toLowerCase().trim().strip();
-               if (Option.equals("yes")) {
-                   break;
-               } else if (Option.equals("no")) {
-                   return;
-               } else {
-                   System.out.println(CC.RED_BOLD_BRIGHT + " ⛔️ Error - \"" + Option + "\" Not Fount! ");
-               }
-           }
-       }
-
-    }
-
 
 
 }

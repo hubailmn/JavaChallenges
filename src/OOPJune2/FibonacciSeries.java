@@ -1,14 +1,17 @@
 package OOPJune2;
-import Main.*;
-import java.util.*;
+
+import Main.CC;
+import Main.While;
+
+import java.util.Scanner;
 
 public class FibonacciSeries {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    public static void main(){
+    public static void main() {
 
-        while(true){
+        while (true) {
             System.out.printf("\n >%s Enter the number of terms:%s ", CC.YELLOW_BRIGHT, CC.RESET);
             int terms = While.getIntegerScanOnly(scan);
 
@@ -28,7 +31,6 @@ public class FibonacciSeries {
             }
         }
     }
-
 
 
     private static void generateFibonacciSeries(int terms) {

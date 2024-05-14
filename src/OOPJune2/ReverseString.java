@@ -1,19 +1,22 @@
 package OOPJune2;
-import Main.*;
-import java.util.*;
+
+import Main.CC;
+import Main.While;
+
+import java.util.Scanner;
 
 public class ReverseString {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    public static void main(){
+    public static void main() {
 
-        while (true){
+        while (true) {
             System.out.printf("\n\t >%s Enter a string: %s", CC.YELLOW_BRIGHT, CC.RESET);
             String input = While.getSentenceStringScanOnly(scan);
 
             String reversed = reverseString(input);
-            System.out.printf("\n\t > %sReversed string: %s%s%s", CC.YELLOW_BRIGHT,CC.GREEN_BRIGHT, reversed, CC.RESET);
+            System.out.printf("\n\t > %sReversed string: %s%s%s", CC.YELLOW_BRIGHT, CC.GREEN_BRIGHT, reversed, CC.RESET);
 
             while (true) {
                 System.out.print(CC.WHITE_BOLD_BRIGHT + "\n\n ⚪️ Try Again? < Yes / No > ");

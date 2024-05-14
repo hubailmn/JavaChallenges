@@ -1,41 +1,43 @@
 package Party;
 
-import java.util.*;
-import Main.*;
+import Main.CC;
+import Main.While;
+
+import java.util.Scanner;
 
 
 public class Party {
 
+    private static final Scanner scan = new Scanner(System.in);
     private static String name;
     private static int numGuests;
 
-    private static final Scanner scan = new Scanner(System.in);
-
-    public Party(String name){
+    public Party(String name) {
         Party.name = name;
     }
 
-    public void partyInfo(){
+    public void partyInfo() {
         System.out.printf("""
                 Party name: %s
                 Party Guests: %s
-                """,name,numGuests);
-    }
-    public void getGuests(){
-        System.out.println(CC.YELLOW_BOLD_BRIGHT+"\nNumber of Guests:" + numGuests);
+                """, name, numGuests);
     }
 
-    public int getNumGuests(){
+    public void getGuests() {
+        System.out.println(CC.YELLOW_BOLD_BRIGHT + "\nNumber of Guests:" + numGuests);
+    }
+
+    public int getNumGuests() {
         return numGuests;
     }
 
-    public void setGuests(){
-        System.out.print(CC.YELLOW_BOLD_BRIGHT+"\nEnter the number of Guests: ");
+    public void setGuests() {
+        System.out.print(CC.YELLOW_BOLD_BRIGHT + "\nEnter the number of Guests: ");
         numGuests = While.getIntegerScanOnly(scan);
     }
 
-    public void displayInvitation(){
-        System.out.println(CC.CYAN_BOLD_BRIGHT+"\nPlease come to my party!");
+    public void displayInvitation() {
+        System.out.println(CC.CYAN_BOLD_BRIGHT + "\nPlease come to my party!");
     }
 
 

@@ -1,15 +1,16 @@
 package Challenges;
 
+import Main.While;
+
 import java.util.Scanner;
-import Main.*;
 
 public class NumberToName {
 
-    public static void main(){
+    public static void main() {
 
         Scanner numberToNameScanner = new Scanner(System.in);
 
-        while (true){
+        while (true) {
             System.out.print("Please enter the number of the month: ");
             int monthNumber = numberToNameScanner.nextInt();
 

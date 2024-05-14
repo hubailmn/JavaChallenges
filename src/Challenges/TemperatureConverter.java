@@ -1,14 +1,15 @@
 package Challenges;
 
+import Main.While;
+
 import java.util.Scanner;
-import Main.*;
 
 public class TemperatureConverter {
 
-    public static void main(){
+    public static void main() {
         Scanner temperatureConvScanner = new Scanner(System.in);
 
-        while(true){
+        while (true) {
             System.out.print("\nPress C to convert from Fahrenheit to Celsius. Press F to convert from Celsius to Fahrenheit. \nYour choice: ");
             char convertType = temperatureConvScanner.next().toLowerCase().strip().trim().charAt(0);
             System.out.print("Please enter the temperature: ");

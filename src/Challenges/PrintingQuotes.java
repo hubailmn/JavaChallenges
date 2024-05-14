@@ -1,27 +1,28 @@
 package Challenges;
 
+import Main.While;
+
 import java.util.Scanner;
-import Main.*;
 
 public class PrintingQuotes {
 
-    public static void printingQuotes(){
+    public static void printingQuotes() {
 
         Scanner quotScanner = new Scanner(System.in);
 
-        while (true){
+        while (true) {
             System.out.println(" > What is the quot? ");
             String quot = quotScanner.nextLine().trim().strip();
             System.out.println(" > Who said it? ");
             String author = quotScanner.nextLine().trim().strip();
-            System.out.println(author + " says, " + '"'+quot+'"');
+            System.out.println(author + " says, " + '"' + quot + '"');
 
             While.again();
 
         }
     }
 
-    public static void printingQuotesV2(){
+    public static void printingQuotesV2() {
         Scanner scanner = new Scanner(System.in);
         boolean run = true;
         while (run) {

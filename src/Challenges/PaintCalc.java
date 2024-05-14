@@ -1,20 +1,21 @@
 package Challenges;
 
+import Main.While;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
-import Main.*;
 
 public class PaintCalc {
 
-    public static void main(){
+    public static void main() {
 
         DecimalFormat df = new DecimalFormat("#.###");
         Scanner paintScanner = new Scanner(System.in);
         System.out.println("\n   ---> The Area of the Rectangular <---    ");
-        double areaLength, areaWidth,exactNumberGallon;
+        double areaLength, areaWidth, exactNumberGallon;
 
-        while(true) {
-            while(true){
+        while (true) {
+            while (true) {
                 System.out.print("\n > What is the length of the room in feet? ");
                 if (paintScanner.hasNextDouble()) {
                     areaLength = paintScanner.nextDouble();
@@ -23,7 +24,7 @@ public class PaintCalc {
                     System.out.println("Invalid input. Please enter a numeric value.");
                 }
             }
-            while(true){
+            while (true) {
                 System.out.print("\n > What is the width of the room in feet? ");
                 if (paintScanner.hasNextDouble()) {
                     areaWidth = paintScanner.nextDouble();

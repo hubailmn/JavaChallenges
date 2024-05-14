@@ -1,11 +1,12 @@
 package Challenges;
 
+import Main.While;
+
 import java.util.Scanner;
-import Main.*;
 
 public class SimpleMath {
 
-    public static void main(){
+    public static void main() {
         Scanner simpleMathScanner = new Scanner(System.in);
         boolean SimpleTuition = true;
         while (SimpleTuition) {

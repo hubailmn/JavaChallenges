@@ -4,23 +4,23 @@ import java.util.Scanner;
 
 public class BinaryHexDecimal {
 
-    public static void main(){
+    public static void main() {
         Scanner scan = new Scanner(System.in);
 
-        while (true){
+        while (true) {
 
             System.out.print("""
 
-                Menu:\s
-                \t1. Convert Decimal To Binary.\s
-                \t2. Convert Decimal To Hexadecimal.
-                \t3. Convert Binary To Decimal.\s
-                \t4. Convert Binary To Hexadecimal.
-                \t5. Convert Hexadecimal to Decimal.\s
-                \t6. Convert Hexadecimal To Binary.
-                \t7. Quit
+                    Menu:\s
+                    \t1. Convert Decimal To Binary.\s
+                    \t2. Convert Decimal To Hexadecimal.
+                    \t3. Convert Binary To Decimal.\s
+                    \t4. Convert Binary To Hexadecimal.
+                    \t5. Convert Hexadecimal to Decimal.\s
+                    \t6. Convert Hexadecimal To Binary.
+                    \t7. Quit
 
-                > Enter Option:\s""");
+                    > Enter Option:\s""");
 
             String option = scan.next();
             int decimal;
@@ -46,7 +46,7 @@ public class BinaryHexDecimal {
                 case "4" -> {
                     System.out.print("\n Binary To Hexadecimal: ");
                     binary = scan.next();
-                    System.out.println("The Binary Value to Hexadecimal is: " +  Integer.toHexString(Integer.parseInt(binary, 2)));
+                    System.out.println("The Binary Value to Hexadecimal is: " + Integer.toHexString(Integer.parseInt(binary, 2)));
                 }
                 case "5" -> {
                     System.out.print("\nHexadecimal to Decimal: ");
