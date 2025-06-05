@@ -26,7 +26,7 @@ public class CSVFilePractice {
                         Name: %s
                         Grade: %s
                         Role: %s
-                                                
+                        
                         """, data[0], data[2], data[3]);
             }
             br.close();

@@ -1,7 +1,7 @@
 package Project1;
 
 public class CheckingAccount extends Account {
-    private double overdraftLimit;
+    private final double overdraftLimit;
 
     public CheckingAccount(int accountNumber, double balance, String ownerName, double overdraftLimit) {
         super(accountNumber, balance, ownerName);

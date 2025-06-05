@@ -9,7 +9,7 @@ public class TicTacToa {
     private static final char[][] board = new char[3][3];
     private static char currentPlayer = 'X';
 
-    public static void main() {
+    public static void main(String[] args) {
 
         initializeBoard();
         displayBoard();

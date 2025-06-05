@@ -4,15 +4,15 @@ public class Person {
 
     private static String nationality;
     private static String languages;
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
 
     public Person(String name, int age, String nationality, String languages) {
         this.name = name;
         this.age = age;
-        this.nationality = nationality;
-        this.languages = languages;
+        Person.nationality = nationality;
+        Person.languages = languages;
 
     }
 

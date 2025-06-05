@@ -51,6 +51,6 @@ public class ArraySum {
             sum += number;
         }
 
-        return (double) sum;
+        return sum;
     }
 }

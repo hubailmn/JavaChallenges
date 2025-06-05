@@ -13,7 +13,7 @@ public class Main {
 
         do {
             System.out.printf(CC.YELLOW_BOLD_BRIGHT + """
-                                        
+                    
                     Bank Account Manager
                         1. Create a new account
                         2. View an existing account
@@ -36,7 +36,7 @@ public class Main {
                     System.out.print("Enter owner name: " + CC.RESET);
                     String ownerName = While.getStringScanOnly(scanner);
                     System.out.printf(CC.YELLOW_BOLD_BRIGHT + """
-                                                    
+                            
                             Enter account type
                                 1. Savings
                                 2. Checking

@@ -1,9 +1,9 @@
 package OOP;
 
 public class CarInsurancePolicy {
-    private int policyNumber;
-    private int numPayments;
-    private String residentCity;
+    private final int policyNumber;
+    private final int numPayments;
+    private final String residentCity;
 
     public CarInsurancePolicy(int policyNumber, int numPayments, String residentCity) {
         this.policyNumber = policyNumber;

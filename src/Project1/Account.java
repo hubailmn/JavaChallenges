@@ -1,9 +1,9 @@
 package Project1;
 
 public class Account {
-    private int accountNumber;
+    private final int accountNumber;
     private double balance;
-    private String ownerName;
+    private final String ownerName;
 
     public Account(int accountNumber, double balance, String ownerName) {
         this.accountNumber = accountNumber;

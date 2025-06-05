@@ -13,8 +13,8 @@ public class Main {
 
 
         System.out.printf(CC.BLUE_BOLD_BRIGHT + """
-                                        
-                                        
+                
+                
                 ---------------------------------
                      June 2nd - OOP WorkSheet
                 ---------------------------------
@@ -33,7 +33,7 @@ public class Main {
                        11. Word Count
                        12. Help
                        13. Quit
-                   """, CC.RESET);
+                """, CC.RESET);
 
 
         while (true) {
@@ -64,8 +64,8 @@ public class Main {
 
     private static void help() {
         System.out.printf(CC.BLUE_BOLD_BRIGHT + """
-
-
+                
+                
                 ---------------------------------
                      June 2nd - OOP WorkSheet
                 ---------------------------------
@@ -84,6 +84,6 @@ public class Main {
                        11. Word Count - To counts the number of words in the sentence.
                        12. Help - To show this menu.
                        13. Quit - To Exit the program.
-                   """, CC.RESET);
+                """, CC.RESET);
     }
 }

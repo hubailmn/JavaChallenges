@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class TryCatch {
 
-    private static Scanner scan = new Scanner(System.in);
+    private static final Scanner scan = new Scanner(System.in);
 
     public static void ErrorHandle1() {
 

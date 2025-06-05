@@ -11,14 +11,14 @@ public class Teacher extends Member {
 
     public void info() {
         System.out.printf("""
-                                
+                
                 info:
                     name: %s
                     age: %s
                     weight: %sKg
                     gender: %s
                     role : %s 
-                                
+                
                 """, name, age, weight, gender, role);
     }
 

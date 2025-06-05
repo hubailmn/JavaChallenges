@@ -31,7 +31,7 @@ public class DinnerParty extends Party {
 
     public void getMenu() {
         System.out.println(CC.CYAN_BOLD_BRIGHT + """
-                                
+                
                 1. Chicken
                 2. Beef
                 3. Fish""");

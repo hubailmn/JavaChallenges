@@ -16,12 +16,12 @@ public class MorseCodeToEnglish {
         while (true) {
 
             System.out.print("""
-                                        
+                    
                     \nMain Menu:
                     \t1. Convert Morse Code to English Text.
                     \t2. Convert English Text to Morse Code.
                     \t3. Exit
-                                        
+                    
                     Enter Your Option: \s"""
             );
 

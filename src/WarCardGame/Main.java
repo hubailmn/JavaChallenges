@@ -9,7 +9,7 @@ public class Main {
 
         WarGame L1 = new WarGame("1", "2");
         while (true) {
-            L1.play();
+            WarGame.play();
 
             While.again();
         }

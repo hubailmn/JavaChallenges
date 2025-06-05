@@ -10,7 +10,7 @@ public class BinaryHexDecimal {
         while (true) {
 
             System.out.print("""
-
+                    
                     Menu:\s
                     \t1. Convert Decimal To Binary.\s
                     \t2. Convert Decimal To Hexadecimal.
@@ -19,7 +19,7 @@ public class BinaryHexDecimal {
                     \t5. Convert Hexadecimal to Decimal.\s
                     \t6. Convert Hexadecimal To Binary.
                     \t7. Quit
-
+                    
                     > Enter Option:\s""");
 
             String option = scan.next();
