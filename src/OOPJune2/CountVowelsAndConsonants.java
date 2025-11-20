@@ -11,7 +11,7 @@ public class CountVowelsAndConsonants {
     private static int vowels;
     private static int consonants;
 
-    public static void main() {
+    public static void main(String[] args) {
 
         while (true) {
             System.out.printf("\n\t > %sEnter a string: %s", CC.YELLOW_BRIGHT, CC.RESET);
@@ -47,7 +47,6 @@ public class CountVowelsAndConsonants {
         }
 
     }
-
 
     private static boolean isVowel(char ch) {
         return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';

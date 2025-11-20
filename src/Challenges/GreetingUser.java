@@ -3,7 +3,7 @@ package Challenges;
 import java.util.Scanner;
 
 public class GreetingUser {
-    public static void main() {
+    public static void main(String[] args) {
 
         Scanner newScanner = new Scanner(System.in);
         System.out.println("What is your name? ");

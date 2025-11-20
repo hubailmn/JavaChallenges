@@ -7,8 +7,7 @@ import java.util.Scanner;
 
 public class ArraysPractice {
 
-
-    public static void main() {
+    public static void main(String[] args) {
 
         String[] stringArray = {"hello", "this", "is", "dwight", "school", "Seoul"};
         stringArray[0] = "Good morning";
@@ -20,13 +19,11 @@ public class ArraysPractice {
         }
         System.out.println("\n\n" + java.util.Arrays.toString(intArray));
 
-
         for (int i = 0; i < stringArray.length; i++) {
             stringArray[i] = stringArray[i].toUpperCase();
         }
 
         System.out.println("\n\n" + java.util.Arrays.toString(stringArray));
-
 
     }
 

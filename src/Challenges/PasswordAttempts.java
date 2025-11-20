@@ -7,8 +7,7 @@ import java.util.Scanner;
 
 public class PasswordAttempts {
 
-
-    public static void main() {
+    public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
@@ -44,7 +43,6 @@ public class PasswordAttempts {
             While.again();
         }
     } //password
-
 
     private static int getInt(Scanner scan) {
         while (!scan.hasNextInt()) {

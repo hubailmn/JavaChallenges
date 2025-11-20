@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ComparingNumbers {
 
-    public static void main() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (true) {
             int num1, num2, num3;

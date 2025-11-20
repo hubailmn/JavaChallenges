@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class MorseCodeToEnglish {
 
-    public static void main() {
+    public static void main(String[] args) {
 
         char[] letter = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
         String[] code = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", "|"};
@@ -62,7 +62,6 @@ public class MorseCodeToEnglish {
             }
         }
     }
-
 
     public static void englishToMorse(String[] code, String englishLang, char[] letter) {
         System.out.print(CC.RESET + "Morse code of " + englishLang + " is ");

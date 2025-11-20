@@ -30,5 +30,4 @@ public class Dog {
         System.out.println("OOP.Dog is waiting ");
     }
 
-
 }

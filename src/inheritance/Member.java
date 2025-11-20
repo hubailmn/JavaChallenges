@@ -7,7 +7,6 @@ public class Member {
     int age;
     double weight;
 
-
     public Member(String name, int age, double weight, String gender) {
         this.name = name;
         this.age = age;
@@ -18,6 +17,5 @@ public class Member {
     public void eatLunch() {
         System.out.println("Eating Lunch...");
     }
-
 
 }

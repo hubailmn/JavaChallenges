@@ -9,7 +9,7 @@ public class ReverseString {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    public static void main() {
+    public static void main(String[] args) {
 
         while (true) {
             System.out.printf("\n\t >%s Enter a string: %s", CC.YELLOW_BRIGHT, CC.RESET);
@@ -32,7 +32,6 @@ public class ReverseString {
         }
 
     }
-
 
     private static String reverseString(String input) {
         StringBuilder reversed = new StringBuilder();

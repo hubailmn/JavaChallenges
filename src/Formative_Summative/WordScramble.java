@@ -7,7 +7,7 @@ public class WordScramble {
 
     private static int score;
 
-    public static void main() {
+    public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 

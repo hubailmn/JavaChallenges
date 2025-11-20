@@ -28,7 +28,6 @@ public class TicTacToa {
         }
         System.out.println(CC.YELLOW_BRIGHT + "\nGame over. It's a tie!");
 
-
     } // void main
 
     private static void initializeBoard() {

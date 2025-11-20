@@ -5,7 +5,6 @@ import Main.While;
 
 import java.util.Scanner;
 
-
 public class Party {
 
     private static final Scanner scan = new Scanner(System.in);
@@ -39,6 +38,5 @@ public class Party {
     public void displayInvitation() {
         System.out.println(CC.CYAN_BOLD_BRIGHT + "\nPlease come to my party!");
     }
-
 
 }

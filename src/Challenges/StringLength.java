@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class StringLength {
 
-    public static void main() {
+    public static void main(String[] args) {
 
         Scanner lengthScanner = new Scanner(System.in);
 
@@ -22,6 +22,5 @@ public class StringLength {
 
         }
     }
-
 
 }

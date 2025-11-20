@@ -3,7 +3,7 @@ package Challenges;
 import java.util.Scanner;
 
 public class TipCalc {
-    public static void main() {
+    public static void main(String[] args) {
 
         Scanner tipScanner = new Scanner(System.in);
         double bill, tip, sum;
@@ -14,6 +14,5 @@ public class TipCalc {
         sum = bill + bill * (tip / 100);
         System.out.println("Your total bill is " + bill + ", your tip is " + tip + ", and the sum is " + sum);
     }
-
 
 }

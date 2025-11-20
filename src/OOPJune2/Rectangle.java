@@ -16,7 +16,7 @@ public class Rectangle {
         this.width = width;
     }
 
-    public static void main() {
+    public static void main(String[] args) {
 
         while (true) {
             System.out.printf("\n\t > %sEnter the length: %s ", CC.YELLOW_BRIGHT, CC.RESET);
@@ -24,7 +24,6 @@ public class Rectangle {
 
             System.out.printf("\t > %sEnter the width: %s ", CC.YELLOW_BRIGHT, CC.RESET);
             double width = While.getDoubleScanOnly(scan);
-
 
             Rectangle rectangle = new Rectangle(length, width);
             double area = rectangle.calculateArea();
@@ -71,6 +70,5 @@ public class Rectangle {
     public double calculatePerimeter() {
         return 2 * (length + width);
     }
-
 
 }

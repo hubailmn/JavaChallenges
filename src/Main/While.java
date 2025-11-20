@@ -52,7 +52,6 @@ public class While {
         return scan.next().charAt(0);
     }
 
-
     public static double getDoubleScanOnly(Scanner scan) {
         while (!scan.hasNextDouble()) {
             System.out.print(CC.RED_BOLD_BRIGHT + "\t⛔️ Invalid Input, Please enter a Integer or Double value: " + CC.RESET);
@@ -90,7 +89,6 @@ public class While {
 
         randomizeString(originalWord);
         String output = new String(originalWord);*/
-
 
     public static String encrypt(String message, int key) {
         StringBuilder result = new StringBuilder();

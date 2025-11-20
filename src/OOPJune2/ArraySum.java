@@ -9,7 +9,7 @@ public class ArraySum {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    public static void main() {
+    public static void main(String[] args) {
 
         while (true) {
             System.out.printf("\n\t > %s Enter the Size of the array:%s ", CC.YELLOW_BRIGHT, CC.RESET);
@@ -43,7 +43,6 @@ public class ArraySum {
         }
 
     }
-
 
     private static double calculateSum(int[] numbers) {
         int sum = 0;

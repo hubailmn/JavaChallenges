@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class PasswordGen {
-    public static void main() {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         char[] letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'm', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class PizzaParty {
 
-    public static void main() {
+    public static void main(String[] args) {
 
         Scanner pizzaScanner = new Scanner(System.in);
 
@@ -33,6 +33,5 @@ public class PizzaParty {
 
         }
     }
-
 
 }

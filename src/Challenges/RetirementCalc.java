@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class RetirementCalc {
 
-    public static void main() {
+    public static void main(String[] args) {
         Scanner retirementScanner = new Scanner(System.in);
         while (true) {
             System.out.print("\n> What is your current age? ");
@@ -24,6 +24,5 @@ public class RetirementCalc {
 
         }
     }
-
 
 }

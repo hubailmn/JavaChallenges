@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BMICalc {
 
-    public static void main() {
+    public static void main(String[] args) {
         Scanner anotherScanner = new Scanner(System.in);
 
         System.out.println("what is your weight <kg>? ");
@@ -27,6 +27,5 @@ public class BMICalc {
         }
 
     }
-
 
 }

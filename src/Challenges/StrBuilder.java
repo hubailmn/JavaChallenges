@@ -2,7 +2,7 @@ package Challenges;
 
 public class StrBuilder {
 
-    public static void main() {
+    public static void main(String[] args) {
 
         java.lang.StringBuilder myString = new java.lang.StringBuilder();
         myString.append("hello this is dwight school seoul");
@@ -21,8 +21,6 @@ public class StrBuilder {
         myString.delete(startIndex, endIndex);
         System.out.println(myString);
 
-
     }
-
 
 } //main

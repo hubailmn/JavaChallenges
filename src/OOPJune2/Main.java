@@ -11,7 +11,6 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
-
         System.out.printf(CC.BLUE_BOLD_BRIGHT + """
                 
                 
@@ -35,23 +34,22 @@ public class Main {
                        13. Quit
                 """, CC.RESET);
 
-
         while (true) {
             System.out.print(CC.PURPLE_BOLD_BRIGHT + "\n > Enter Option: " + CC.RESET);
             int option = While.getIntegerScanOnly(scan);
 
             switch (option) {
-                case 1 -> ArraySearch.main();
-                case 2 -> ArraySum.main();
-                case 3 -> CalculateAverage.main();
-                case 4 -> CharacterCheck.main();
-                case 5 -> CountVowelsAndConsonants.main();
-                case 6 -> FibonacciSeries.main();
-                case 7 -> LeapYear.main();
-                case 8 -> PrimeNumberChecker.main();
-                case 9 -> Rectangle.main();
-                case 10 -> ReverseString.main();
-                case 11 -> WordCount.main();
+                case 1 -> ArraySearch.main(args);
+                case 2 -> ArraySum.main(args);
+                case 3 -> CalculateAverage.main(args);
+                case 4 -> CharacterCheck.main(args);
+                case 5 -> CountVowelsAndConsonants.main(args);
+                case 6 -> FibonacciSeries.main(args);
+                case 7 -> LeapYear.main(args);
+                case 8 -> PrimeNumberChecker.main(args);
+                case 9 -> Rectangle.main(args);
+                case 10 -> ReverseString.main(args);
+                case 11 -> WordCount.main(args);
                 case 12 -> help();
                 case 13 -> {
                     System.out.println(CC.CYAN_BOLD_BRIGHT + "\n 🎣 Quitting");

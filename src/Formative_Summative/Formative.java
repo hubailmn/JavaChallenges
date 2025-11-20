@@ -5,11 +5,9 @@ import java.util.Scanner;
 
 public class Formative {
 
-
 //    Question 1:
 //    Write a Java method to find the 3 smallest elements in the given array and output these to screen, with a suitable message.
 //    [1, 4, 17, 7, 25, 3, 100]
-
 
     //    Example output :
     //    ******
@@ -38,18 +36,14 @@ public class Formative {
         System.out.println("The smallest numbers are " + array[0] + ", " + array[1] + ", " + array[2]);
     }
 
-
 //    Question 2:
 //    Write a Java method to find the numbers greater than the average of the numbers of a given array and
 //    output these to screen, with a suitable message.
 
-
 //    Example output :
-
 
 //    the number 29 is greater than the array average 23
 //    the number 100 is greater than the array average 23
-
 
     public static void question2() {
 
@@ -78,7 +72,6 @@ public class Formative {
     //    577
     //    the binary value is 100100001
 
-
     public static void question3() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the decimal number... ");
@@ -96,7 +89,6 @@ public class Formative {
     //Write a Java method that merges 2 given arrays into 1 new array and outputs the new array to screen.
     //[1,8,17,29,4]
     //[1,4,17,7]
-
 
     //Example Output:
     //the merged array as [1,8,17, 29, 4, 1, 4, 17, 7 ]

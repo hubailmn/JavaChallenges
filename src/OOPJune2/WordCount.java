@@ -9,7 +9,7 @@ public class WordCount {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    public static void main() {
+    public static void main(String[] args) {
 
         while (true) {
             System.out.printf("\n\t > %s Enter a sentence: %s", CC.YELLOW_BRIGHT, CC.RESET);
@@ -33,7 +33,6 @@ public class WordCount {
         }
     }
 
-
     private static int countWords(String sentence) {
         if (sentence == null || sentence.isEmpty()) {
             return 0;
@@ -42,6 +41,5 @@ public class WordCount {
         String[] words = sentence.split("\\s+");
         return words.length;
     }
-
 
 }

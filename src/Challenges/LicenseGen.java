@@ -22,7 +22,6 @@ public class LicenseGen {
             rawPassword.append(get(letters));
         }
 
-
         for (int i = 0; i < numCount; i++) {
             rawPassword.append(getInt());
         }

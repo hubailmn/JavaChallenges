@@ -5,12 +5,11 @@ import Main.While;
 
 import java.util.Scanner;
 
-
 public class CalculateAverage {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    public static void main() {
+    public static void main(String[] args) {
 
         while (true) {
             System.out.printf("\n\t > %s Enter the Size of the array:%s ", CC.YELLOW_BRIGHT, CC.RESET);
@@ -44,7 +43,6 @@ public class CalculateAverage {
         }
 
     }
-
 
     private static double calculateAverage(int[] numbers) {
         int sum = 0;

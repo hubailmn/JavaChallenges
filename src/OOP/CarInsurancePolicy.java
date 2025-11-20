@@ -25,5 +25,4 @@ public class CarInsurancePolicy {
         System.out.printf("Resident city: %s\n", residentCity);
     }
 
-
 }

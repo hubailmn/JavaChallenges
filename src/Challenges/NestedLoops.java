@@ -27,7 +27,6 @@ public class NestedLoops {
         System.out.println(CC.RED_BRIGHT + "End...");
     }
 
-
     public static void ZerosPattern() {
 
         Scanner scanner = new Scanner(System.in);
@@ -69,6 +68,5 @@ public class NestedLoops {
             }
         }
     }
-
 
 }// main

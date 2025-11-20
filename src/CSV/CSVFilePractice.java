@@ -11,8 +11,7 @@ public class CSVFilePractice {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    public static void main() {
-
+    public static void main(String[] args) {
 
         try {
             FileReader fr = new FileReader("src/CSV/ComputerScience.csv");

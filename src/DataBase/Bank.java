@@ -144,8 +144,7 @@ public class Bank {
                                             System.out.println(CC.BLUE_BRIGHT + "\nLogging you out!\n" + CC.RESET);
                                             break loop2;
                                         }
-                                        default ->
-                                                System.out.printf(CC.RED_BOLD_BRIGHT + "Unknown command \"%s\"" + CC.RESET, option);
+                                        default -> System.out.printf(CC.RED_BOLD_BRIGHT + "Unknown command \"%s\"" + CC.RESET, option);
                                     }
                                 }
                             } else {

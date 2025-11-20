@@ -6,7 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         WarGame L1 = new WarGame("1", "2");
         while (true) {
             WarGame.play();
@@ -15,6 +14,5 @@ public class Main {
         }
 
     } // void main
-
 
 } // Main

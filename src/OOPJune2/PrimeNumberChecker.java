@@ -9,7 +9,7 @@ public class PrimeNumberChecker {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    public static void main() {
+    public static void main(String[] args) {
 
         while (true) {
             System.out.printf(" \n\n\t> %sEnter A Number: %s", CC.YELLOW_BRIGHT, CC.RESET);

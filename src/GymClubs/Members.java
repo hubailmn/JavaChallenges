@@ -41,11 +41,9 @@ public class Members {
         this.memberID = memberID;
     }
 
-
     public void setName(String name) {
         this.name = name;
     }
-
 
     public void setFees(double fees) {
         this.fees = fees;
@@ -54,7 +52,6 @@ public class Members {
     public String toString() {
         return memberType + " " + memberID + " " + name + " " + fees;
     }
-
 
 }
 

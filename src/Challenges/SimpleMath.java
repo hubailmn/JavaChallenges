@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class SimpleMath {
 
-    public static void main() {
+    public static void main(String[] args) {
         Scanner simpleMathScanner = new Scanner(System.in);
         boolean SimpleTuition = true;
         while (SimpleTuition) {
@@ -29,6 +29,5 @@ public class SimpleMath {
 
         }
     }
-
 
 }

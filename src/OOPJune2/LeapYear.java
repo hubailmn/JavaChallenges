@@ -9,7 +9,7 @@ public class LeapYear {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    public static void main() {
+    public static void main(String[] args) {
 
         while (true) {
 
@@ -37,7 +37,6 @@ public class LeapYear {
         }
 
     }
-
 
     private static boolean isLeapYear(int year) {
         if (year % 4 != 0) {

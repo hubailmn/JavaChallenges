@@ -8,7 +8,6 @@ public class Teacher extends Member {
         super(name, age, weight, Gender);
     }
 
-
     public void info() {
         System.out.printf("""
                 
@@ -29,6 +28,5 @@ public class Teacher extends Member {
     public void prepareLesson() {
         System.out.println("Teacher is preparing to the Lesson...");
     }
-
 
 }

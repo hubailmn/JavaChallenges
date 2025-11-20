@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class PaintCalc {
 
-    public static void main() {
+    public static void main(String[] args) {
 
         DecimalFormat df = new DecimalFormat("#.###");
         Scanner paintScanner = new Scanner(System.in);

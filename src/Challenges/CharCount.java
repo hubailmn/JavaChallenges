@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CharCount {
 
-    public static void main() {
+    public static void main(String[] args) {
 
         Scanner anotherScanner = new Scanner(System.in);
         boolean continueLoop = true;
@@ -24,6 +24,5 @@ public class CharCount {
         }
         System.out.println(" \n> Quiting");
     }
-
 
 }

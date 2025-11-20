@@ -139,7 +139,6 @@ public class Magic8Ball {
             System.out.println("\nType Your Question Here... ");
             playScanner.nextLine();
 
-
             switch (x) {
                 case 0:
                     System.out.println("Challenges.Magic8Ball ->  It is certain");
